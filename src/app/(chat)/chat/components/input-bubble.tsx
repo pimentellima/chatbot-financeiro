@@ -43,7 +43,8 @@ export default function InputBubble({
                     className="ml-auto"
                     variant="default"
                 >
-                    Send <ArrowUpIcon />
+                    <span className="hidden sm:block">Send</span>{' '}
+                    <ArrowUpIcon />
                 </InputGroupButton>
             </InputGroupAddon>
         </InputGroup>
