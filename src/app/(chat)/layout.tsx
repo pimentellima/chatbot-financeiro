@@ -34,7 +34,7 @@ export default async function ChatLayout({
         <HydrationBoundary state={dehydrate(queryClient)}>
             <div className="h-screen bg-background items-center flex">
                 <Drawer />
-                <div className="py-3 pr-3 h-full w-full">
+                <div className="py-3 pr-3 h-full w-full md:pl-0 pl-3">
                     <div className="w-full py-4 h-full border rounded-md bg-muted/90">
                         {children}
                     </div>
