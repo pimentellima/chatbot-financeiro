@@ -1,3 +1,4 @@
+// layout.tsx
 import { auth } from '@/lib/auth'
 import getUserChatHistory from '@/lib/chat/get-user-chat-history'
 import getUserImports from '@/lib/chat/get-user-imports'
@@ -32,7 +33,7 @@ export default async function ChatLayout({
     })
     return (
         <HydrationBoundary state={dehydrate(queryClient)}>
-            <div className="h-screen bg-background items-center flex">
+            <div className="h-screen bg-background flex">
                 <Drawer />
                 <div className="py-3 pr-3 h-full w-full md:pl-0 pl-3">
                     <div className="w-full py-4 h-full border rounded-md bg-muted/90">
