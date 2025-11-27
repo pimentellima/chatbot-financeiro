@@ -19,7 +19,7 @@ export default function ChatHistory({ chat }: { chat?: Chat[] }) {
                         key={i}
                         data-selected={params.id === chat.id}
                         variant="ghost"
-                        className="justify-start w-full data-[selected=true]:bg-accent/60"
+                        className="justify-start w-full data-[selected=true]:bg-accent/60 truncate"
                     >
                         <Link href={'/chat/' + chat.id}>{message}</Link>
                     </Button>
