@@ -19,7 +19,6 @@ export async function POST(request: Request) {
     }
 
     const { message, id: chatId } = await request.json()
-    console.log('Chat ID:', chatId)
     console.log('Received message:', message)
 
     const previousMessages =
@@ -29,7 +28,6 @@ export async function POST(request: Request) {
     const validatedMessages = await validateUIMessages({
         messages: [...previousMessages, message],
     })
-    console.log('Validated messages:', validatedMessages)
     const result = streamText({
         model: openai('gpt-4.1-mini'),
         tools,
