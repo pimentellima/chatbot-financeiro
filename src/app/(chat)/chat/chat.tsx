@@ -207,19 +207,19 @@ function QuestionPrompts({
         <div className="grid gap-1">
             <QuestionButton
                 sendMessage={sendMessage}
-                question="Com que eu mais gastei no mês de janeiro?"
+                question="What did I spend the most on in January?"
             />
             <QuestionButton
                 sendMessage={sendMessage}
-                question="Faça um gráfico comparando os gastos com alimentação e transporte desse mês."
+                question="Make a comparison between my income and expenses over the last 3 months."
             />
             <QuestionButton
                 sendMessage={sendMessage}
-                question="Quanto eu gastei com transporte no mês passado?"
+                question="How have my expenses on entertainment changed over the past 6 months?"
             />
             <QuestionButton
                 sendMessage={sendMessage}
-                question="Mostre o meu gasto com lazer ao longo do ano."
+                question="Show me a pie chart of my expenses by category for last month."
             />
         </div>
     )
